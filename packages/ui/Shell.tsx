@@ -24,6 +24,7 @@ export const Shell: React.FunctionComponent<{
         <Header
           height={60}
           p="xs"
+          display="flex"
           style={{ background: theme.colors.blue[8] }}
         >
           {title}
