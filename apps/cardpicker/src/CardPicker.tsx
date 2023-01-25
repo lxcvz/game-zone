@@ -52,6 +52,19 @@ export const CardPicker = () => {
           </Box>
         ))}
       </Box>
+      {played !== null && (
+        <Button
+          mt="md"
+          size="lg"
+          fullWidth
+          onClick={() => {
+            setCards(shuffle(OPTIONS));
+            setPlayed(null)
+          }}
+        >
+          Play Again
+        </Button>
+      )}
     </Paper>
   )
 }
