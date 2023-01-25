@@ -27,7 +27,7 @@ export const Shell: React.FunctionComponent<{
           display="flex"
           style={{ background: theme.colors.blue[8] }}
         >
-          {title}
+          <Title style={{ color: theme.colors.gray[0] }}>{title}</Title>
           <Box sx={{ flexGrow: 1 }}></Box>
           {!user && (
             <Button variant="light" onClick={() => setUser("lucas")}>
@@ -35,8 +35,8 @@ export const Shell: React.FunctionComponent<{
             </Button>
           )}
           {user && (
-            <Box>
-              <Title>{user} - {score}</Title>
+            <Box sx={{ display: "flex" }}>
+              <Title mr="md">{user} - {score}</Title>
               <Button variant="light" onClick={() => setUser(null)}>Logout</Button>
             </Box>
           )}

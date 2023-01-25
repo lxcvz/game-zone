@@ -38,11 +38,11 @@ var Shell = ({ title, children }) => {
           display: "flex",
           style: { background: theme.colors.blue[8] },
           children: [
-            title,
+            /* @__PURE__ */ jsx(Title, { style: { color: theme.colors.gray[0] }, children: title }),
             /* @__PURE__ */ jsx(Box, { sx: { flexGrow: 1 } }),
             !user && /* @__PURE__ */ jsx(Button, { variant: "light", onClick: () => setUser("lucas"), children: "Login" }),
-            user && /* @__PURE__ */ jsxs(Box, { children: [
-              /* @__PURE__ */ jsxs(Title, { children: [
+            user && /* @__PURE__ */ jsxs(Box, { sx: { display: "flex" }, children: [
+              /* @__PURE__ */ jsxs(Title, { mr: "md", children: [
                 user,
                 " - ",
                 score
