@@ -5,7 +5,13 @@ import { CardPicker } from "cardpicker/CardPicker"
 function App() {
   return (
     <Shell title="Game zone">
-      <CardPicker />
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gridGap: "1rem",
+      }}>
+        <CardPicker />
+      </div>
     </Shell>
   )
 }
