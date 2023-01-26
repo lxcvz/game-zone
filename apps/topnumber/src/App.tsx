@@ -1,10 +1,12 @@
 import React from 'react';
-import { Shell } from "ui";
-
+import { Shell } from "ui"
+import { TopNumber } from './TopNumber';
 
 function App() {
   return (
-    <Shell title="Topnumber"><div></div></Shell>
+    <Shell title="Card Picker">
+      <TopNumber />
+    </Shell>
   );
 }
 

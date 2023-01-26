@@ -13,7 +13,9 @@ module.exports = () => ({
         new ModuleFederationPlugin({
           name: "topnumber",
           filename: "remoteEntry.js",
-          exposes: {},
+          exposes: {
+            "./TopNumber": "./src/TopNumber"
+          },
           shared: {
             ...deps,
             ui: {
