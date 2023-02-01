@@ -1,8 +1,4 @@
 
-<h1 align="center">
- Game-zone a micro-frotend setup
-</h1>
-
 ## 💻 About
 
 Game zone is a micro-frontend setup with realtime state sharing and can be used as a template for future projects!
@@ -21,7 +17,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚀 Get started
 
-- `git clone`
-- On game-zone folder open terminal and install the dependecies ex: `yarn` or `npm install`
+- First clone project `git clone https://github.com/lxcvz/micro-frontend-setup.git`
+- On terminal type `cd game-zone`
+- On game-zone folder open terminal and install the dependecies with `yarn` or `npm install`
 - Start the server with `yarn dev` or `npm run dev`
 
+After that, 3 tabs will appear in the browser with the parent project and 2 child projects running!
+
+enjoy
