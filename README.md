@@ -1,4 +1,3 @@
-
 ## 💻 About
 
 Game zone is a micro-frontend setup with realtime state sharing and can be used as a template for future projects!
@@ -23,5 +22,3 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Start the server with `yarn dev` or `npm run dev`
 
 After that, 3 tabs will appear in the browser with the parent project and 2 child projects running!
-
-enjoy
